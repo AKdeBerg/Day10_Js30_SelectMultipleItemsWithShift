@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+
+    /* background: #FFCCCC; */
+    background: #009999;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFCC;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.904);
+}
+
+.todo-container {
+    /* border: 2px solid black; */
+
+    /* sizing */
+    max-width: 450px;
+    /*positioning*/
+    margin: 50px auto;
+    margin-top: 25px;
+
+    background: #FFFFCC;
+    /* background: #00CCCC; */
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 rgba(103, 104, 103, 0.609);
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px dotted #009999;
+}
+
+.todo:last-child {
+    border: none;
+}
+
+input[type="checkbox"] {
+    margin: 20px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+input[type="checkbox"]:checked+p {
+    text-decoration: line-through;
+}
+
+input[type="checkbox"]+p {
+    padding: 0 5px;
+    flex: 1;
+}
